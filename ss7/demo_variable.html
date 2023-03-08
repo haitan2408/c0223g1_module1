@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    c= 10;
+    console.log(c);
+    let  c = 7;
+    //khai báo bên ngoài function => biến toàn cục
+    let a = 5;
+
+    function test() {
+        if (a >= 5) {
+            var b = 6;
+            console.log(b)
+        } else {
+            let b = 7;
+        }
+        console.log(b)
+    }
+
+    //gọi hàm chạy
+    test();
+</script>
+</body>
+</html>
