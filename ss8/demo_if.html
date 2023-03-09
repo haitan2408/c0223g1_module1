@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let diemThi = prompt("Mời bạn nhập điểm thi") * 1;
+    // let diemAudit = prompt("Mời bạn nhập điểm audit") * 1;
+    // if (diemThi >= 75 && diemAudit >= 6) {
+    //     alert("Pass");
+    // } else {
+    //     let diemThiLai = prompt("Mời bạn nhập điểm thi lại")
+    //     if (diemThiLai >= 80) {
+    //         alert("Pass")
+    //     } else {
+    //         alert("tạch tạch tạch")
+    //     }
+    // }
+    let month = prompt("Mời bạn nhập vào số tháng") * 1;
+    switch (month) {
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:
+            alert("31 ngày")
+            break;
+        case 2:
+            let year = prompt("Mời bạn nhập năm cần kiểm tra:") * 1;
+            if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0)) {
+                alert("29 ngày")
+            } else {
+                alert("28 ngày");
+            }
+
+            break;
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+            alert("30 ngày");
+            break;
+        default:
+            alert("Bạn nhập không phải từ tháng 1 -> 12")
+    }
+</script>
+</body>
+</html>
