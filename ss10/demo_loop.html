@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let username;
+    // let password;
+    // do {
+    //     username = prompt("Mời bạn nhập username: ");
+    //     password = prompt("Mời bạn nhập password: ")
+    // } while (username != "admin" || password != "12345678");
+    // alert("Đăng nhập thành công");
+
+    // for(let i =1; i<=5; i++) {
+    //     let height =prompt("Nhập vào chiều cao của bạn thứ "+ i);
+    //     if(height > 1.65) {
+    //         console.log("Bạn thứ " + i + "cao trên 1.65 => cao đó chứ")
+    //     }
+    // }
+
+    //Hiển thị 30 số nguyên tố đầu tiên.
+    //đặt lính canh
+    let count = 0;
+    let number = 2;
+    while (count < 30) {
+        let isPrime = true;
+        if(number == 2 || number == 3) {
+            console.log(number + "là số nguyên tố");
+            number++;
+            count++;
+            continue;
+        }
+        for (let i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i == 0) {
+                isPrime = false;
+                break;
+            }
+        }
+        if(isPrime) {
+            console.log(number+ "là số nguyên tố")
+            count++;
+        }
+        number++;
+    }
+    // let isPrime = true;
+    // let number = prompt("Mời bạn nhập số cần kiểm tra") * 1;
+    // for (let i = 2; i < number; i++) {
+    //     if (number % i == 0) {
+    //         isPrime = false;
+    //     }
+    // }
+    // if(isPrime) {
+    //     console.log(number+ "là số nguyên tố")
+    // }
+</script>
+</body>
+</html>
