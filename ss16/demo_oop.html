@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Student {
+        constructor(id, name, dateOfBirth, address, email) {
+            this.id = id;
+            this.name = name;
+            this.dateOfBirth = dateOfBirth;
+            this.address = address;
+            this.email = email;
+        }
+
+        audit(nameTeacher) {
+            //tên gì đó đang bị HaiTT audit
+            alert(this.name + " đang bị" +nameTeacher+" audit");
+        }
+    }
+    let studentHoa = new Student("4372", "Lê Thị Yến Hoa", "2000", "Đà Nẵng", "hoa@gmail.com");
+    let studentHai = new Student("4373", "Đinh Thanh Hải", "2000", "Đà Nẵng", "hai@gmail.com");
+    alert(studentHoa.name);
+    let students = [];
+    students.push(studentHoa);
+    students.push(studentHai);
+    alert(students[1].address);
+    students[0].name;
+    studentHoa.audit(" ChánhTV");
+</script>
+</body>
+</html>
